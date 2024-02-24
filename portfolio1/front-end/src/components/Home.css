@@ -1,0 +1,181 @@
+.profile-container{
+    background-color: black;
+    display: flex;
+    align-items: center;    
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: fit-content;
+}
+.profile-parent{
+    align-items: center;
+    color: aliceblue;
+}
+.profile-details-name{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.profile-details-role{
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0 24px 0;
+}
+
+.profile-details-role h1{
+    font-size: 34px;
+    font-family: cursive;
+}
+.primary-text{
+    margin: 10px;
+    font-size: 18px;
+    color: wheat;
+}
+.highlighted-text{
+    color: rgb(224, 51, 25);
+}
+
+.profile-options .btn{
+    color: white;
+    border-radius: 18px;
+    margin: 8px;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 6px 18px 6px 18px;
+}
+.profile-options .primary-btn{
+    color: white;
+    border: 1px solid white;
+    border-radius: 18px;
+    background-color: black;
+    padding: 10px 36px;
+    transition: 1s ease-out;
+}
+.profile-options .primary-btn:hover{
+    background-color: black;
+    color: azure;
+    border: 1px solid black;
+    border-radius: 18px;
+    box-shadow: 0px 2px 5px rgb(229, 88, 13), 0px -2px 5px rgb(35, 253, 137), 2px 1px 5px rgb(96, 203, 253),-2px 0px 5px rgb(255, 141, 217);
+    transform: scale(.5s);
+    transition: 1s ease-out;
+    
+}
+
+.profile-options .highlighted-btn{
+    background-color: red;
+    margin: 0 0 0 28px;
+    border: none;
+    border: 1px solid white;
+    color: #111;
+    padding: 10px 30px;
+    transition: 1s ease-out;
+}
+
+.highlighted-btn:hover{
+    border: none;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    transform: scale(1.2s);
+    transition: 1s ease-in;
+    box-shadow: 0px 2px 5px rgb(21, 141, 253),0px -2px 5px rgb(21, 141, 253);
+}
+.profile-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 0px rgb(88, 255, 88),4px 8px 14px 1px rgb(88, 255, 88);
+    border-radius: 50%;
+    height:400px;
+    width: 400px;
+    margin: 0 0px 0 100px;
+    transition: 1s ease-out;
+}
+/* .profile-picture:hover{
+    transform: scale(1.07);
+    transition: 1s ease-in;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px rgb(88, 255, 88),4px 8px 14px 1px rgb(88, 255, 88);
+} */
+.profile-picture-background{
+    height: 92%;
+    width: 92%;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../public/vipul.jpg");
+    background-size: cover;
+    transition: 1s ease-out;
+}
+.profile-picture-background:hover{
+    transform: scale(1.07);
+    transition: 1s ease-in;
+    border-radius: 50%;
+}
+
+.colz .colz-icon i{
+    color: white;
+    margin: 10px;
+    border-radius: 16px;
+    font-size: 1.4rem;
+    padding: 6px;
+    transition: 1s ease-out;
+}
+.colz .colz-icon i:hover{
+    transition: 1s ease-in-out;
+    color: white;
+    border: 1px;
+    background-color: black;
+    border-radius: 16px;
+    box-shadow:  0px 0px 4px rgb(88, 255, 88),1px 0px 8px -2px rgb(88, 255, 88), 2px 0px 3px orange, -2px 0px 3px blueviolet;
+
+}
+
+@media screen and (max-width: 1110px){
+    .profile-picture{
+        margin: 0 0px 0 80px;
+    }
+    .profile-details-name{
+        font-size: 20px;
+    }
+    .profile-details-role .primary-text{
+        font-size: 12px;
+    }
+    .profile-options .btn{
+        width: 120px;
+        padding: 11px 0;
+        z-index: 700;
+    }
+}
+
+
+@media screen and (max-width:910px) {
+    .profile-picture{
+        height: 320px;
+        width: 320px;
+        margin: 0 0 0 4px;
+    }
+}
+
+@media screen and (max-width:810px) {
+    .profile-picture{
+        margin: 0 !important;
+    }
+    .profile-parent{
+        flex-direction: column-reverse;
+        margin: 40px 0 0 0;
+    }
+    .profile-options{
+        display: flex;
+        justify-content: space-between;
+    }
+    .profile-deatils{
+        margin: 25px 0 0;
+    }
+    .profile-options .highlighted-btn{
+        margin: 0 !important;
+    }
+    .profile-options, .profile-details-role{
+        text-align: center;
+    }
+}
